@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./gerenciadorE.js" defer></script>
+</head>
+ 
+<body class="main">
+    <header>
+        <div class="navMaior">
+            <nav class="navbar">
+                <h1>Gerenciador de Eventos</h1>
+                <ul class="nav-links">
+                    <li><a href="./cadastroP.html">Cadastro de palestrantes</a></li>
+                    <li><a href="./cadastroE.html">Cadastro de eventos</a></li>
+                    <li><a href="./gerenciadorE.html">Gerenciador de Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ 
+    <main>
+        <h2>Eventos</h2>
+ 
+        <br><br>
+ 
+        <p id="mensagem" role="status" aria-live="polite"></p>
+        <div class="cards" id="eventos-lista">
+            <div class="card">
+ 
+                <div>
+                    <text class="titulo">NOME:</text>
+                    <text>Palestra RP</text>
+                </div>
+ 
+                <div>
+                    <text class="titulo">DESCRIÇÃO:</text>
+                    <text>Palestra sobre gestão e comunicação</text>
+                </div>
+ 
+                <div>
+                    <text class="titulo">PALESTRANTE:</text>
+                    <text>Dra. Ana Carvalho</text>
+                </div>
+ 
+ 
+                <div class="botoes">
+                    <div class="botao">
+                        <text>EDITAR</text>
+                    </div>
+ 
+                    <div class="botao">
+                        <text>EXCLUIR</text>
+                    </div>
+                </div>
+ 
+            </div>
+ 
+            <div class="card">
+ 
+                <div>
+                    <text class="titulo">NOME:</text>
+                    <text>Palestra RP</text>
+                </div>
+ 
+                <div>
+                    <text class="titulo">DESCRIÇÃO:</text>
+                    <text>Palestra sobre gestão e comunicação</text>
+                </div>
+ 
+                <div>
+                    <text class="titulo">PALESTRANTE:</text>
+                    <text>Dra. Ana Carvalho</text>
+                </div>
+ 
+ 
+                <div class="botoes">
+                    <div class="botao">
+                        <text>EDITAR</text>
+                    </div>
+ 
+                    <div class="botao">
+                        <text>EXCLUIR</text>
+                    </div>
+                </div>
+ 
+            </div>
+ 
+            <div class="card">
+ 
+                <div>
+                    <text class="titulo">NOME:</text>
+                    <text>Palestra RP</text>
+                </div>
+ 
+                <div>
+                    <text class="titulo">DESCRIÇÃO:</text>
+                    <text>Palestra sobre gestão e comunicação</text>
+                </div>
+ 
+                <div>
+                    <text class="titulo">PALESTRANTE:</text>
+                    <text>Dra. Ana Carvalho</text>
+                </div>
+ 
+ 
+                <div class="botoes">
+                    <div class="botao">
+                        <text>EDITAR</text>
+                    </div>
+ 
+                    <div class="botao">
+                        <text>EXCLUIR</text>
+                    </div>
+                </div>
+ 
+            </div>
+ 
+            <div class="card">
+ 
+                <div>
+                    <text class="titulo">NOME:</text>
+                    <text>Palestra RP</text>
+                </div>
+ 
+                <div>
+                    <text class="titulo">DESCRIÇÃO:</text>
+                    <text>Palestra sobre gestão e comunicação</text>
+                </div>
+ 
+                <div>
+                    <text class="titulo">PALESTRANTE:</text>
+                    <text>Dra. Ana Carvalho</text>
+                </div>
+ 
+ 
+                <div class="botoes">
+                    <div class="botao">
+                        <text>EDITAR</text>
+                    </div>
+ 
+                    <div class="botao">
+                        <text>EXCLUIR</text>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+
+        <dialog id="dialog-edicao">
+            <form id="form-edicao-evento">
+                <h3>Editar evento</h3>
+                <div class="campo">
+                    <label for="edicao-nome">Nome:</label>
+                    <input id="edicao-nome" name="nome" required>
+                </div>
+                <div class="campo">
+                    <label for="edicao-descricao">Descrição:</label>
+                    <input id="edicao-descricao" name="descricao" required>
+                </div>
+                <div class="campo">
+                    <label for="edicao-local">Local:</label>
+                    <input id="edicao-local" name="local" required>
+                </div>
+                <div class="campo">
+                    <label for="edicao-data">Data e hora:</label>
+                    <input id="edicao-data" name="data" type="datetime-local" required>
+                </div>
+                <div class="campo">
+                    <label for="edicao-palestrante">Palestrante:</label>
+                    <select id="edicao-palestrante" name="palestranteId" required></select>
+                </div>
+                <button type="submit">Salvar alterações</button>
+                <button type="button" id="cancelar-edicao">Cancelar</button>
+            </form>
+        </dialog>
+ 
+    </main>
+ 
+</body>
+ 
+ 
+</html>

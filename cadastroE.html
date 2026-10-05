@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./cadastroE.js" defer></script>
+</head>
+
+<body class="main">
+    <header>
+        <div class="navMaior">
+            <nav class="navbar">
+                <h2>Gerenciador de Eventos</h2>
+                <ul class="nav-links">
+                    <li><a href="./cadastroP.html">Cadastro de palestrantes</a></li>
+                    <li><a href="./cadastroE.html">Cadastro de eventos</a></li>
+                    <li><a href="./gerenciadorE.html">Gerenciador de Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h3>Cadastro Evento</h3>
+        <form id="form-evento">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" name="descricao" required>
+            </div>
+
+            <div class="campo">
+                <label for="local">Local:</label>
+                <input type="text" id="local" name="local" required>
+            </div>
+
+            <div class="campo">
+                <label for="palestranteId">Palestrante:</label>
+                <select id="palestranteId" name="palestranteId" required>
+                    <option value="">Carregando palestrantes...</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="data">Data e hora:</label>
+                <input type="datetime-local" id="data" name="data" required>
+            </div>
+
+
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p id="mensagem" role="status" aria-live="polite"></p>
+    </main>
+
+</body>
+
+
+</html>
